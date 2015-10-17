@@ -1,6 +1,13 @@
+html, body {
+	background-color: white;
+}
+
 .giphInput {
-	height: 60px;
+	height: 58px;
 	width: 65%;
 	padding: 20px;
+	padding-bottom: 24px;
+
 }
+
 

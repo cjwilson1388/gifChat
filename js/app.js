@@ -1,1 +1,1 @@
-var app = angular.module('giphChat', [])
+angular.module('gifChat', []);
