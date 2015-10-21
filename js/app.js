@@ -1,1 +1,3 @@
-angular.module('gifChat', []);
+var app = angular.module('gifChat', ["firebase"]);
+
+

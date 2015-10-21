@@ -10,4 +10,21 @@ html, body {
 
 }
 
+.body-container {
+	height: auto;
+	width: 400px;
+	background-color: #d8d8d8;
+	padding: 25px;
+	margin-right: 25%;
+	margin-left: 25%;
+}
+.gifs-container img {
+	max-height: 100%;
+	max-width: 100%;
+	margin-top: 1px;
+	margin-bottom: 25px;
+	float: middle;
+	align: middle;
+
+}
 
