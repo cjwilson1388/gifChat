@@ -1,7 +1,7 @@
 angular.module('gifChat')
 
 .controller('gifControl', function($scope, gifService, $firebaseArray) {
-	
+
 	var ref = new Firebase('https://gifchat-cj.firebaseio.com/');
 	$scope.gifs = $firebaseArray(ref);
 	$scope.getGif = function () {
@@ -12,8 +12,8 @@ angular.module('gifChat')
 			console.log(response);
 			$scope.gifs.unshift(response.data[randomNum].images.downsized_large.url);
 			var recentGif = response.data[randomNum].images.downsized_large.url;
-			var queryText = $scope.query
-			$scope.gifs.$add({text:queryText, gif:recentGif})
+			var queryText = $scope.query;
+			$scope.gifs.$add({text:queryText, gif:recentGif});
 			$scope.query = "";
 
 		})
@@ -21,7 +21,7 @@ angular.module('gifChat')
 
 		.error(function (err) {
 			console.error(err);
-		})
+		});
 	};
 
 

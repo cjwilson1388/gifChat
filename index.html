@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Giphy Chatroom</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="stylesheet" href="jumbotron.css" class="style">	
+	<link rel="stylesheet" href="jumbotron.css" class="style">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body ng-controller="gifControl">
@@ -17,13 +17,13 @@
        <form class="form-search">
 	       <input ng-model="query" class="giphInput" placeholder="Search for a gif" />
 	       <button class="btn btn-large"ng-click="getGif()">Spin It!</button>
-	  </form> 
+	  </form>
    </div><!--/jumbotron -->
- 	<div class="body-container">	
+ 	<div class="body-container">
    <div class="row marketing">
         <div ng-repeat="query in gifs | orderBy: '-'" class="gifs-container">
-      		<img ng-src="{{ query.gif }}" />
-      		<h5> {{ query.text }} </h5>
+					<h5> {{ query.text }} </h5>
+					<img ng-src="{{ query.gif }}" />
 		</div>
 	</div>
 	</div>
